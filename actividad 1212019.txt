@@ -1,0 +1,11 @@
+2- abrir navegador
+3- abrir herramientas para desarrolladores
+4- Buscar algo en la web o abrir una aplicacion o pagina
+5- observar datos de una petición
+	+ método
+	+ Cuerpo
+	+ Headers
+6- Observar datos de respuesta
+	+ headers 
+	+ cuerpo
+	+ codigo 	

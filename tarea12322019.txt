@@ -1,0 +1,55 @@
+* Pedir un número de caractéres ingresarlos y finalmente concaternarlos en una cadena final
+
+INICIO
+ String dump = "";
+ INT numChar = 0;
+ MOSTRAR "Cuántos caractéres quiere que tenga su cadena: ";
+ LEER numChar;
+ char chArr[numChar];
+ for(int i=0; i<numChar; i++)
+  +INICIO
+   MOSTRAR "Ingrese su caractér: ";
+   LEER chArr[i];
+   dump = dump+chArr[i];
+  -FIN
+ MOSTRAR "La cadena resultante es: " + dump;
+FIN
+
+* Pedir el número de calificaciones ingresarlas y calcular su promedio
+
+INICIO
+	INT QtyNum, sum;
+	DOUBLE prom;
+	MOSTRAR "cuántas calificaciones quiere mostrar? ";
+ 	LEER QtyNum;
+	INT  GrArr[QtyNum];
+	for(int i=0; i<QtyNum; i++)
+		+INICIO
+		MOSTRAR "Ingrese la calificación número "+(i+0);
+		LEER GrArr[i];
+		-FIN
+	MOSTRAR "Ingresó las siguientes calificaciones: ";
+	for(int i=0; i<QtyNum; i++)
+		+INICIO
+		  MOSTRAR (i+1)+". "+GrArr[i];
+		  sum += GrArr[i];
+		-FIN
+	prom = sum / QtyNum;
+	MOSTRAR "El promedio es: "+prom;
+	
+FIN
+
+*DEFINIR SI UN AÑO ES BISIESTO O NO
+INICIO
+	INT anio;
+	MOSTRAR "INGRESE EL AÑO: ";
+	LEER anio;
+	if((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0)))
+		+INICIO
+		 MOSTRAR "EL AÑO "+anio+" ES BISIESTO";
+		-FIN
+	else
+		+INICIO
+		 MOSTRAR "EL AÑO "+anio+" NO ES BISIESTO";
+		-FIN
+FIN

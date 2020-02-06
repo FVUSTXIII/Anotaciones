@@ -1,0 +1,32 @@
+Similarities
+	* more than 20,000 words that are alike 
+	* they both come from latin
+	* 
+Differences
+	* Grammar structure
+	* Spanish only has 5 vowel sounds whereas english has twelve
+	* difference in the words coming from german and old swedish
+
+Verbs: exist, conjugate, get, come
+Nouns: house, sound, grammar, influence
+Adjectives: international, similar, different, enormous, European
+Adverbs: practically, originally
+
+char[] arreglo = {'H','O','L', 'A'};
+for(int i=0; i<tamanio(arreglo); i++) {
+	mostrar arreglo[(tamanio(arreglo)-1)-i];
+}
+ALOH
+
+
+Tells the client the server's prefered encoding scheme when submiting a username 
+and password. 
+
+The only allowed value is the case insensitive string "UTF-8". 
+This does not relate to the encoding of the realm string.
+
+Le indica al cliente el esquema de encoding preferido del servidor cuando envía 
+usuario y contraseña.
+
+el unico valor permitido es la cadena case sensitive "UTF-8".
+Esto no se relaciona con el encoding del realm string*

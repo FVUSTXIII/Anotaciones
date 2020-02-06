@@ -1,0 +1,208 @@
+* Clasificacion de la edad manejando
+
+INICIO
+ INT EDAD;
+ MOSTRAR "Ingrese su edad: ";
+ LEER EDAD;
+ if(EDAD <= 16){
+  -INICIO
+  MOSTRAR "TIENE EDAD SUFICIENTE PARA MANEJAR ";
+  -FIN
+ }
+ else {
+  -INICIO
+  MOSTRAR "NO TIENES EDAD SUFICIENTE PARA MANEJAR ";
+  -FIN
+ }
+FIN
+
+* DADO UN NUMERO CLASIFICAR DE LA EDAD DE ACUERDO A LOS SIGUIENTES RANGOS: (BEBE(0-2), NIÑO(3-10), ADOLESCENTE(11-17), ADULTO(18-65), PERSONA MAYOR(66-110), MUERTO(>111))
+
+INICIO
+ INT EDAD;
+ MOSTRAR "INGRESE SU EDAD: ";
+ LEER EDAD;
+ IF(EDAD <= 2 && EDAD >= 0) {
+  -INICIO
+  MOSTRAR "ERES UN BEBÉ";
+  -FIN
+ }
+ IF ELSE(EDAD <= 10 && EDAD >= 3) {
+  -INICIO
+  MOSTRAR "ERES UN NIÑO";
+  -FIN
+ }
+ IF ELSE(EDAD <= 17 && EDAD >= 11) {
+  -INICIO
+  MOSTRAR "ERES UN ADOLESCENTE"; 
+  -FIN
+ }
+ IF ELSE(EDAD <= 18 && EDAD >= 65) {
+  -INICIO
+  MOSTRAR "ERES UN ADULTO";
+  -FIN
+ }
+ IF ELSE(EDAD <= 66 && EDAD >= 110) {
+  -INICIO
+  MOSTRAR "ERES UNA PERSONA MAYOR";
+  -FIN
+ } 
+ IF ELSE(EDAD > 111) {
+  -INICIO
+  MOSTRAR "ESTAS MUERTO";
+  -FIN
+ }
+FIN
+
+* INGRESAR TU NOMBRE Y MOSTRARLO 50 VECES
+
+ INICIO
+ INT CONT = 0;
+ STRING NOMBRE;
+ MOSTRAR "INGRESA TU NOMBRE: ";
+ LEER NOMBRE;
+ FOR(CONT; CONT<50; CONT++){
+  -INICIO
+  MOSTRAR NOMBRE;
+  -FIN
+ }
+ FIN
+
+* FACTORIAL
+
+ INICIO
+ INT DIGITO = 0, FACTORIAL = 0, AUX = 0;
+ MOSTRAR "INGRESE EL NÚMERO: ";
+ LEER DIGITO;
+ IF(DIGITO<0) {
+  -INICIO
+   AUX = DIGITO;
+   FACTORIAL = DIGITO;
+   FOR(INT I=1; I<AUX; I++) {
+   -INICIO 
+    DIGITO--;
+    FACTORIAL *= DIGITO;
+   -FIN
+   }
+   MOSTRAR "EL FACTORIAL DEL NUMERO INGRESADO ES: " + FACTORIAL;
+  -FIN
+ }
+ FIN
+ 
+* TABLA DE MULTIPLICAR HASTA 10 x 10
+
+ INICIO
+ FOR(INT I=0; I<10; I++) {
+  -INICIO
+    MOSTRAR "TABLA DEL " + I;
+   FOR(INT J=0; J<10; J++) {
+    -INICIO
+     MOSTRAR I + " x " + J + " = " + (I*J) + "\n";
+    -FIN
+   }
+  MOSTRAR "***************************************\n";  
+  -FIN
+ }
+ FIN
+
+* SUMA DE LOS NÚMEROS DE N DADO a 0
+
+ INICIO
+ INT N = 0, A = 0;
+ MOSTRAR "INGRESE UN NÚMERO: ";
+ LEER N;
+ IF(N > 0) {
+ -INICIO
+  A=N;
+  WHILE(A>0) {
+    -INICIO
+     A--;
+     N+=A;
+    -FIN
+  }
+ -FIN
+  MOSTRAR "LA SUMATORIA ES: " + N;
+ }
+ ELSE {
+  -INICIO
+  MOSTRAR "TU NUMERO ES 0";
+  -FIN
+ }
+ FIN
+
+* MOSTRAR MULTIPLOS DE 3 HASTA EL 100 
+
+ INICIO
+  INT DIGITO = 1, MULTIPLO = 3;
+  MOSTRAR "MULTIPLOS";
+  WHILE(MULTIPLO < 100){
+   -INICIO
+    MOSTRAR "EL MULTIPLO TIENE EL VALOR DE " + MULTIPLO + "\n";
+    DIGITO++;
+    MULTIPLO *= DIGITO;
+   -FIN
+  }
+ FIN
+
+* FIBONACCI
+
+ INICIO
+  INT PRIMERO=0, SEGUNDO=0, TERCERO=0;
+  MOSTRAR TERCERO;
+  WHILE(TERCERO < 380) {
+   -INICIO
+     TERCERO = PRIMERO+SEGUNDO;
+     PRIMERO = PRIMERO+SEGUNDO;
+     SEGUNDO = TERCERO-SEGUNDO;
+     MOSTRAR TERCERO;
+   -FIN
+  }
+ FIN
+
+* MOSTRAR LOS NUMEROS PRIMOS
+
+INICIO
+	INT NUMERO = 2, i = 0, contador = 0, cantidad_primos = 0, cuantos_primos = 0;
+	MOSTRAR "Cuántos primos: ";
+	LEER cuantos_primos;
+	SI cuantos_primos > 0;
+	-INICIO
+		MIENTRAS cantidad_primos < cuantosprimos;
+			-INICIO
+				FOR (i=1; i<=NUMERO; i++)
+					-INICIO
+					SI (NUMERO%i==0)
+						-INICIO
+						contador++;
+						-FIN
+					-FIN
+				SI (contador == 2) 
+					-INICIO
+					MOSTRAR NUMERO;
+					cantidad_primos++;
+					-FIN
+				NUMERO++;
+				contador = 0;
+			-FIN
+	-FIN	
+FIN		
+
+* MOSTRAR UN TRIANGULO DANDO UN NUMERO
+ INICIO
+ INT NIVELES=0, AUX=0;
+ MOSTRAR "CUÁNTOS NIVELES? ";
+ LEER NIVELES;
+ IF(NIVELES>0) {
+   -INICIO
+   FOR(INT I=1; I<=NIVELES; I++){
+     MIENTRAS(AUX<I){
+      -INICIO
+       MOSTRAR "*"
+       AUX++;
+      -FIN
+    }
+   MOSTRAR "\n";
+   }
+   -FIN
+ }
+ FIN
