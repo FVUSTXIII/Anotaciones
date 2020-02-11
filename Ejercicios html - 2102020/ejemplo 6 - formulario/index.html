@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 6</title>
+	</head>
+	<body>
+		<h1>Formulario Comida Mexicana</h1>
+		<h2>Pide tu orden</h2>
+		<form> <!--etiqueta de formulario-->
+			<div>
+				<label>Nombre</label>
+				<input type = "text" name="nombre" placeholder="Ej. Enfrijoladas"> 
+			</div>
+			<div>
+				<label>Tamañio</label>
+				<select name="tamanio">
+					<option value="S">Chico</option>
+					<option value="M">Mediano</option>
+					<option value="L">Grande</option>
+				</select>
+			</div>
+			<div>
+				<p>Condimento</p>
+				<input type="radio" name="Picante/noPicante" value="si">Picante
+				<input type="radio" name="Picante/noPicante" value="no">No picante
+			</div>
+			<div>
+				<textarea name="comentarios" placeholder="Comentarios..."></textarea>
+			</div>
+			<input type="submit" value="Guardar">	
+		</form>
+	</body>
+</html>
